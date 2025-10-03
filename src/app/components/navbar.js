@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+    const router = new useRouter();
+
     return (
         <nav className="w-full flex items-center justify-between px-6 py-4">
             {/* Left section: Logo and Typography */}
-            <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2 hover:cursor-pointer" onClick={() => router.push("/")}>
                 <Image 
                     src="/condrx_labs_logo.png"
                     alt="condrx logo"

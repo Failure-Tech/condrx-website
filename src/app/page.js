@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa";
+import { useRouter } from "next/navigation";
+import Navbar from "./components/navbar";
 
 const Demo = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
   const [currentBuilder, setCurrentBuilder] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
+  const router = useRouter();
 
   const builders = [
     "stealth startups",
@@ -120,7 +123,7 @@ const Home = () => {
       `}</style>
 
       {/* Navbar */}
-      <nav className="w-full flex items-center justify-between px-8 py-5 sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
+      {/* <nav className="w-full flex items-center justify-between px-8 py-5 sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
         <div className="flex items-center space-x-3">
           <Image 
             src="/condrx_labs_logo.png"
@@ -146,13 +149,15 @@ const Home = () => {
           </li>
           <li className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Vision</li>
           <li className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Pricing</li>
-          <li className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Blog</li>
+          <li onClick={() => router.push("/blog")} className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Blog</li>
         </ul>
 
         <button className="font-inter font-medium text-white bg-[#1E1E1E] rounded-full px-7 py-2.5 hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
           Get Started
         </button>
-      </nav>
+      </nav> */}
+
+      <Navbar />
 
       {/* HERO Section */}
       <div className="relative flex flex-col items-center text-center px-4 overflow-hidden pt-8 pb-16">

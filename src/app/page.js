@@ -4,6 +4,14 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 
+const Demo = () => {
+  return (
+    <video width="973" height="535" controls preload="none">
+      <source src="/backup_demo_vid.mp4" type="video/mp4" />
+    </video>
+  )
+}
+
 const Home = () => {
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
@@ -217,13 +225,14 @@ const Home = () => {
           </h1>
 
           <div className="pt-8">
-            <Image 
+            {/* <Image 
               alt="Kairo Product Interface"
               src="/window.svg"
               width={973}
               height={535}
               className="rounded-2xl shadow-2xl hover:shadow-3xl transition-shadow duration-500"
-            />
+            /> */}
+            <Demo />
           </div>
         </div>
       </div>

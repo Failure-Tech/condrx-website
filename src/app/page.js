@@ -213,7 +213,7 @@ const Home = () => {
             Introducing our first product
           </h1>
           <h1 className="font-inter font-bold text-5xl text-[#181818] leading-tight">
-            Meet Kairo. The AI layer that makes every line <br /> of code secure by default.
+            Meet Kairo. The AI layer that makes every <br /> line of code secure by default.
           </h1>
 
           <div className="pt-8">

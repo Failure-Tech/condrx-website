@@ -1,0 +1,39 @@
+import Image from "next/image";
+import React from "react";
+
+const Navbar = () => {
+    return (
+        <nav className="w-full flex items-center justify-between px-6 py-4">
+            {/* Left section: Logo and Typography */}
+            <div className="flex items-center space-x-2">
+                <Image 
+                    src="/condrx_labs_logo.png"
+                    alt="condrx logo"
+                    width={60}
+                    height={60}
+                />
+                <Image 
+                    src="/condrx_labs_logo_typography.png"
+                    alt="condrx logo typography"
+                    width={120}
+                    height={40}
+                />
+            </div>
+
+            {/* Center: Navigation Links */}
+            <ul className="flex space-x-8 transition">
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Product</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Vision</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Pricing</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Blog</li>
+            </ul>
+
+            {/* Right: Get Started Button */}
+            <button className="font-inter text-white bg-[#1E1E1E] rounded-full px-6 py-2">
+                Get Started
+            </button>
+        </nav>
+    );
+};
+
+export default Navbar;

@@ -170,7 +170,7 @@ const Home = () => {
         />
 
         <div className="-mt-24 z-10 flex flex-col items-center space-y-6 relative max-w-5xl">
-          <h1 className="font-inter font-bold text-[#181818] text-6xl leading-tight">
+          <h1 className="font-inter font-semibold text-[#181818] text-6xl leading-tight">
             We create the tools that power <br /> tomorrow&apos;s{" "}
             <span className="inline-block min-w-[320px] text-left text-[#C45816] typing-cursor">
               {displayText}
@@ -225,7 +225,7 @@ const Home = () => {
           <h1 className="font-inter text-[#C45816] text-xl font-semibold uppercase tracking-wide">
             Introducing our first product
           </h1>
-          <h1 className="font-inter font-bold text-5xl text-[#181818] leading-tight">
+          <h1 className="font-inter font-semibold text-5xl text-[#181818] leading-tight">
             Meet Kairo. The AI layer that makes every <br /> line of code secure by default.
           </h1>
 
@@ -246,7 +246,7 @@ const Home = () => {
       <div className="mt-32 px-6 scroll-animate">
         <div className="flex flex-col lg:flex-row justify-center items-start gap-x-20 gap-y-10 max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center font-inter space-y-5 max-w-md hover:scale-105 transition-transform duration-500">
-            <h1 className="text-4xl font-bold text-[#181818]">Real-time Guardrails</h1>
+            <h1 className="text-4xl font-semibold text-[#181818]">Real-time Guardrails</h1>
             <p className="text-lg text-[#555555] leading-relaxed">
               Flags insecure code as it&apos;s generated, keeping <br /> developers safe without leaving their editor.
             </p>
@@ -260,7 +260,7 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center text-center font-inter space-y-5 max-w-md hover:scale-105 transition-transform duration-500">
-            <h1 className="font-inter text-4xl font-bold text-[#181818]">Instant Secure Rewrite</h1>
+            <h1 className="font-inter text-4xl font-semibold text-[#181818]">Instant Secure Rewrite</h1>
             <p className="font-inter text-lg text-[#555555] leading-relaxed">
               Generates a secure alternative instantly, reducing <br /> the time spent fixing vulnerabilities later.
             </p>
@@ -281,7 +281,7 @@ const Home = () => {
           It&apos;s time to code safe
         </h1>
         
-        <h1 className="text-6xl font-inter font-bold text-[#181818] leading-tight">
+        <h1 className="text-6xl font-inter font-semibold text-[#181818] leading-tight">
           Debugging. Shipping apps. <br />
           Writing APIs. Building fintech. <br />
           Every line of code.
@@ -294,7 +294,7 @@ const Home = () => {
 
       {/* Smart Coding Section */}
       <div className="px-6 py-32 flex flex-col items-center text-center font-inter scroll-animate">
-        <h1 className="text-6xl font-bold text-[#181818] mb-20">
+        <h1 className="text-6xl font-semibold text-[#181818] mb-20">
           Smarter coding starts with safety
         </h1>
 
@@ -302,7 +302,7 @@ const Home = () => {
           <div className="bg-gradient-to-br from-[#F9F8F8] to-[#F2F1F1] p-10 rounded-2xl shadow-lg w-full sm:w-[340px] flex flex-col items-center text-center font-inter hover:shadow-2xl hover:scale-105 transition-all duration-500">
             <Image alt="Write and run code" src="/window.svg" width={251} height={251} className="rounded-xl" />
             <p className="mt-7 text-[#181818] text-base leading-relaxed">
-              <span className="font-bold text-lg">Write and run code, instantly</span>{" "}
+              <span className="font-semibold text-lg">Write and run code, instantly</span>{" "}
               <button
                 onClick={() => setExpanded1(!expanded1)}
                 className="inline-flex items-center text-[#C45816] ml-2 hover:text-[#d66119] transition-all duration-300"
@@ -320,7 +320,7 @@ const Home = () => {
           <div className="bg-gradient-to-br from-[#F9F8F8] to-[#F2F1F1] p-10 rounded-2xl shadow-lg w-full sm:w-[340px] flex flex-col items-center text-center font-inter hover:shadow-2xl hover:scale-105 transition-all duration-500">
             <Image alt="Copy-paste" src="/window.svg" width={251} height={251} className="rounded-xl" />
             <p className="mt-7 text-[#181818] text-base leading-relaxed">
-              <span className="font-bold text-lg">Copy-paste without guessing</span>{" "}
+              <span className="font-semibold text-lg">Copy-paste without guessing</span>{" "}
               <button
                 onClick={() => setExpanded2(!expanded2)}
                 className="inline-flex items-center text-[#C45816] ml-2 hover:text-[#d66119] transition-all duration-300"
@@ -338,7 +338,7 @@ const Home = () => {
           <div className="bg-gradient-to-br from-[#F9F8F8] to-[#F2F1F1] p-10 rounded-2xl shadow-lg w-full sm:w-[340px] flex flex-col items-center text-center font-inter hover:shadow-2xl hover:scale-105 transition-all duration-500">
             <Image alt="Support" src="/window.svg" width={251} height={251} className="rounded-xl" />
             <p className="mt-7 text-[#181818] text-base leading-relaxed">
-              <span className="font-bold text-lg">Support you can trust</span>{" "}
+              <span className="font-semibold text-lg">Support you can trust</span>{" "}
               <button
                 onClick={() => setExpanded3(!expanded3)}
                 className="inline-flex items-center text-[#C45816] ml-2 hover:text-[#d66119] transition-all duration-300"
@@ -362,7 +362,7 @@ const Home = () => {
             <h1 className="font-inter text-lg text-[#C45816] font-semibold mb-4 uppercase tracking-wide">
               Your favorite plugins
             </h1>
-            <h2 className="font-inter text-5xl font-bold text-[#181818] leading-tight mb-6">
+            <h2 className="font-inter text-5xl font-semibold text-[#181818] leading-tight mb-6">
               Kairo lives where you code, <br /> upgrading the tools you <br /> already use
             </h2>
             <p className="font-inter text-xl text-[#555555] mt-8 max-w-3xl mx-auto leading-relaxed">
@@ -491,7 +491,7 @@ const Home = () => {
             />
           </div>
 
-          <div className="flex flex-col font-bold font-inter items-center text-center space-y-8 px-12">
+          <div className="flex flex-col font-semibold font-inter items-center text-center space-y-8 px-12">
             <h1 className="text-4xl leading-tight">
               Leveling the playing field <br /> for students, startups, and <br /> small teams.
             </h1>
@@ -544,29 +544,29 @@ const Home = () => {
       </div>
 
       {/* Affiliations Section */}
-      <div className="flex flex-col items-center justify-center space-y-10 py-24 font-inter bg-gradient-to-b from-gray-50 to-white scroll-animate">
-        {/* <h2 className="text-3xl font-bold text-[#181818] mb-6">Backed by the best</h2> */}
+      <div className="flex flex-col items-center justify-center space-y-5 py-5 font-inter bg-gradient-to-b overflow-hidden from-gray-50 to-white scroll-animate">
+        {/* <h2 className="text-3xl font-semibold text-[#181818] mb-6">Backed by the best</h2> */}
         
         <div className="flex flex-row items-center justify-center gap-16">
           <Image 
             alt="Pear AI"
             src="/pear_ai.png"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="FR8"
             src="/fr8.png"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="Partner"
             src="/cursor.png"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
         </div>
@@ -575,15 +575,15 @@ const Home = () => {
           <Image 
             alt="Harvard University"
             src="/harvard_uni.png"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="Carnegie Mellon"
             src="/carnegie_mellon.png"
-            width={200}
-            height={200}
+            width={600}
+            height={600}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
         </div>
@@ -608,7 +608,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="font-inter font-bold mb-5 text-lg">Product</h3>
+              <h3 className="font-inter font-semibold mb-5 text-lg">Product</h3>
               <ul className="space-y-3 font-inter text-sm">
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">Kairo</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">Features</a></li>
@@ -618,7 +618,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="font-inter font-bold mb-5 text-lg">Company</h3>
+              <h3 className="font-inter font-semibold mb-5 text-lg">Company</h3>
               <ul className="space-y-3 font-inter text-sm">
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">About</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">Vision</a></li>
@@ -628,7 +628,7 @@ const Home = () => {
             </div>
 
             <div>
-              <h3 className="font-inter font-bold mb-5 text-lg">Legal</h3>
+              <h3 className="font-inter font-semibold mb-5 text-lg">Legal</h3>
               <ul className="space-y-3 font-inter text-sm">
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">Privacy Policy</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-[#C45816] transition-colors duration-300">Terms of Service</a></li>

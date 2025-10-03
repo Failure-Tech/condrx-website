@@ -35,7 +35,7 @@ const Pricing = () => {
                 <div className="py-24 px-8 max-w-5xl mx-auto">
                     <div className="flex flex-col text-center w-full mb-20">
                         <p className="font-medium text-primary mb-5">Pricing</p>
-                        <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
+                        <h2 className="font-semibold text-3xl lg:text-5xl tracking-tight">
                             Condrx
                         </h2>
                     </div>
@@ -141,7 +141,7 @@ const Pricing = () => {
                 >
                     <div className="flex gap-1 items-center">
                         <span>Built with</span>
-                        <span className="font-bold text-base-content flex gap-0.5 items-center tracking-tight">
+                        <span className="font-semibold text-base-content flex gap-0.5 items-center tracking-tight">
                             <Image
                                 // src={logo}
                                 alt="ShipFast logo"

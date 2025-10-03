@@ -168,8 +168,8 @@ const Home = () => {
             <Image 
               alt="Arrow Icon"
               src="/11.svg"
-              width={250}
-              height={250}
+              width={500}
+              height={500}
               className="absolute -left-80 -top-4 rotate-180 opacity-40"
             />
 
@@ -183,8 +183,8 @@ const Home = () => {
             <Image 
               alt="Key Icon"
               src="/10.svg"
-              width={220}
-              height={220}
+              width={500}
+              height={500}
               className="absolute -left-64 -top-24 -rotate-45 opacity-30"
             />
 
@@ -198,8 +198,8 @@ const Home = () => {
             <Image 
               alt="Money Icon"
               src="/9.svg"
-              width={220}
-              height={220}
+              width={500}
+              height={500}
               className="absolute -right-64 -top-28 rotate-12 opacity-30"
             />
           </div>
@@ -531,7 +531,7 @@ const Home = () => {
 
       {/* Affiliations Section */}
       <div className="flex flex-col items-center justify-center space-y-10 py-24 font-inter bg-gradient-to-b from-gray-50 to-white scroll-animate">
-        <h2 className="text-3xl font-bold text-[#181818] mb-6">Backed by the best</h2>
+        {/* <h2 className="text-3xl font-bold text-[#181818] mb-6">Backed by the best</h2> */}
         
         <div className="flex flex-row items-center justify-center gap-16">
           <Image 
@@ -550,7 +550,7 @@ const Home = () => {
           />
           <Image 
             alt="Partner"
-            src="/pear_ai.png"
+            src="/cursor.png"
             width={200}
             height={200}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"

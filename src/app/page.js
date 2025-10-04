@@ -122,41 +122,6 @@ const Home = () => {
         }
       `}</style>
 
-      {/* Navbar */}
-      {/* <nav className="w-full flex items-center justify-between px-8 py-5 sticky top-0 bg-white/95 backdrop-blur-sm z-50 shadow-sm">
-        <div className="flex items-center space-x-3">
-          <Image 
-            src="/condrx_labs_logo.png"
-            alt="condrx logo"
-            width={60}
-            height={60}
-            className="hover:scale-105 transition-transform duration-300"
-          />
-          <Image 
-            src="/condrx_labs_logo_typography.png"
-            alt="condrx logo typography"
-            width={120}
-            height={40}
-          />
-        </div>
-
-        <ul className="flex space-x-10">
-          <li 
-            onClick={scrollToProduct}
-            className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105"
-          >
-            Product
-          </li>
-          <li className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Vision</li>
-          <li className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Pricing</li>
-          <li onClick={() => router.push("/blog")} className="font-inter font-medium cursor-pointer hover:text-[#C45816] transition-all duration-300 hover:scale-105">Blog</li>
-        </ul>
-
-        <button className="font-inter font-medium text-white bg-[#1E1E1E] rounded-full px-7 py-2.5 hover:bg-[#2a2a2a] hover:scale-105 transition-all duration-300 shadow-md hover:shadow-lg">
-          Get Started
-        </button>
-      </nav> */}
-
       <Navbar />
 
       {/* HERO Section */}
@@ -204,7 +169,7 @@ const Home = () => {
             <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
               Join the waitlist <FaChevronRight className="text-sm" />
             </button>
-            <button className="font-inter font-medium flex items-center gap-3 bg-[#373941] text-white px-8 py-3.5 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+            <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-3.5 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
               See our work <FaChevronRight className="text-sm" />
             </button>
 

@@ -30,7 +30,7 @@ const Navbar = () => {
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Product</li>
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Vision</li>
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Pricing</li>
-                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Blog</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/blog")}>Blog</li>
             </ul>
 
             {/* Right: Get Started Button */}

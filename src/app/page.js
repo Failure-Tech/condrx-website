@@ -516,22 +516,22 @@ const Home = () => {
           <Image 
             alt="Pear AI"
             src="/pear_ai.png"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="FR8"
             src="/fr8.png"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="Partner"
             src="/cursor.png"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
         </div>
@@ -540,15 +540,15 @@ const Home = () => {
           <Image 
             alt="Harvard University"
             src="/harvard_uni.png"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
           <Image 
             alt="Carnegie Mellon"
             src="/carnegie_mellon.png"
-            width={600}
-            height={600}
+            width={400}
+            height={400}
             className="hover:scale-110 transition-transform duration-300 opacity-80 hover:opacity-100"
           />
         </div>

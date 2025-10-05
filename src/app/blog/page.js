@@ -1,16 +1,22 @@
+"use client";
+
 import React from "react";
 import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
 import Footer from "@/app/components/footer";
+import { useRouter } from "next/navigation";
 
 const Blog = () => {
+  const router = useRouter();
+  
   const data = [
     {
       image: "/welcome_condrx.png",
       section: "Company",
       date: "6/27/2025",
       name: "A hello and welcome from Condrx",
+      click: "/blog/pages/start",
       description:
         "From our roots as a small Gen-Z team in Forsyth to our vision of making technology safer and smarter for builders everywhere, this post sets the tone for everything to come.",
       author: "Arnav Maheshwari",
@@ -20,6 +26,7 @@ const Blog = () => {
       section: "Technology",
       date: "8/23/2025",
       name: "Vibe Coding and the End of Stack Overflow",
+      click: "/blog/pages/vibecoding",
       description:
         "A reflection on the rise of AI-assisted coding, cursor copilots, and why productivity is shifting from syntax mastery to problem-solving flow.",
       author: "Gautham Korrapati",
@@ -29,6 +36,7 @@ const Blog = () => {
       section: "Company",
       date: "9/9/2025",
       name: "Building Kairo: Making Code Secure by Default",
+      click: "/blog/pages/kairo",
       description:
         "A behind-the-scenes look at how we’re designing an AI layer that guards every line of code, not just audits it.",
       author: "Gautham Korrapati",
@@ -38,6 +46,7 @@ const Blog = () => {
       section: "Technology",
       date: "9/17/2025",
       name: "Why Small Teams Deserve Enterprise-Grade Security",
+      click: "/blog/pages/smallteamswe",
       description:
         "How cybersecurity has always been built for giants and why we’re rewriting that for builders who move fast, for cheap.",
       author: "Arnav Maheshwari",
@@ -47,6 +56,7 @@ const Blog = () => {
       section: "Company",
       date: "9/25/2025",
       name: "The Grind and Why Condrx Exists",
+      click: "/blog/pages/grind",
       description:
         "The founding story, from late-night Figma screens to the conviction that AI safety and fintech fairness belong together.",
       author: "Arnav Maheshwari",
@@ -56,6 +66,7 @@ const Blog = () => {
       section: "Company",
       date: "10/1/2025",
       name: "Why we started the Forsyth First program",
+      click: "/blog/pages/forsythfirst",
       description:
         "Our mission is simple: to prove that you can build globally relevant technology from anywhere, starting right here from our humble beginnings in Forsyth County, Georgia.",
       author: "Arnav Maheshwari",
@@ -149,7 +160,7 @@ const Blog = () => {
       {/* Blog Card Grid */}
       <div className="w-full flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-6 mt-12 font-inter mb-20 max-w-[1200px]">
-          {data.map((post, index) => (
+          {[...data].reverse().map((post, index) => (
             <div
               key={index}
               className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col w-[350px]"
@@ -165,8 +176,11 @@ const Blog = () => {
               </div>
 
               {/* Card Content */}
-              <div className="flex flex-col px-5 pt-5 pb-6 text-left h-full">
-                {/* Section (Styled as a button) */}
+              <div
+                className="flex hover:cursor-pointer flex-col px-5 pt-5 pb-6 text-left"
+                onClick={() => router.push(post.click)}
+              >
+                {/* Section */}
                 <button className="rounded-3xl border-2 px-4 py-1.5 border-[#767676] bg-[#E9E9E9] text-sm font-medium self-start mb-2">
                   {post.section}
                 </button>
@@ -180,15 +194,16 @@ const Blog = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-sm text-[#333] mb-6 leading-snug">
+                <p className="text-sm text-[#333] mb-2 leading-snug">
                   {post.description}
                 </p>
 
-                {/* Author */}
-                <p className="text-sm font-medium text-[#666] mt-auto">
+                {/* Author (remove mt-auto, apply small top margin if needed) */}
+                <p className="text-sm font-bold text-[#666] mt-1">
                   {post.author}
                 </p>
               </div>
+
             </div>
           ))}
         </div>

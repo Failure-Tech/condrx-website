@@ -2,8 +2,66 @@ import React from "react";
 import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
+import Footer from "@/app/components/footer";
 
 const Blog = () => {
+  const data = [
+    {
+      image: "/welcome_condrx.png",
+      section: "Company",
+      date: "6/27/2025",
+      name: "A hello and welcome from Condrx",
+      description:
+        "From our roots as a small Gen-Z team in Forsyth to our vision of making technology safer and smarter for builders everywhere, this post sets the tone for everything to come.",
+      author: "Arnav Maheshwari",
+    },
+    {
+      image: "/vibecode_stack.png",
+      section: "Technology",
+      date: "8/23/2025",
+      name: "Vibe Coding and the End of Stack Overflow",
+      description:
+        "A reflection on the rise of AI-assisted coding, cursor copilots, and why productivity is shifting from syntax mastery to problem-solving flow.",
+      author: "Gautham Korrapati",
+    },
+    {
+      image: "/kairo.png",
+      section: "Company",
+      date: "9/9/2025",
+      name: "Building Kairo: Making Code Secure by Default",
+      description:
+        "A behind-the-scenes look at how we’re designing an AI layer that guards every line of code, not just audits it.",
+      author: "Gautham Korrapati",
+    },
+    {
+      image: "/small_team_swe.png",
+      section: "Technology",
+      date: "9/17/2025",
+      name: "Why Small Teams Deserve Enterprise-Grade Security",
+      description:
+        "How cybersecurity has always been built for giants and why we’re rewriting that for builders who move fast, for cheap.",
+      author: "Arnav Maheshwari",
+    },
+    {
+      image: "/grind.png",
+      section: "Company",
+      date: "9/25/2025",
+      name: "The Grind and Why Condrx Exists",
+      description:
+        "The founding story, from late-night Figma screens to the conviction that AI safety and fintech fairness belong together.",
+      author: "Arnav Maheshwari",
+    },
+    {
+      image: "/forsyth.png",
+      section: "Company",
+      date: "10/1/2025",
+      name: "Why we started the Forsyth First program",
+      description:
+        "Our mission is simple: to prove that you can build globally relevant technology from anywhere, starting right here from our humble beginnings in Forsyth County, Georgia.",
+      author: "Arnav Maheshwari",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -23,7 +81,7 @@ const Blog = () => {
 
           {/* Logo Image */}
           <div>
-            <Image 
+            <Image
               alt="Ship logo"
               src="/condrx_labs_logo.png"
               height={275}
@@ -33,43 +91,142 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Blog Entry Box */}
+      {/* Featured Blog Entry Box with Image Background */}
       <div className="flex justify-center mt-20 font-inter">
-        <div
-          className="bg-[#D9D9D9] rounded-2xl shadow-xl p-6 flex flex-col justify-between w-[75vw] h-[37vw]"
-        //   style={{ width: "824px", height: "460px" }} // Slightly increased height
-        >
-          {/* Top Section: Buttons + Metadata aligned in a row */}
-          <div className="flex flex-col">
-            <div className="flex items-center gap-4">
-              {/* Buttons */}
-              <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
-                {/* Vision <FaChevronRight className="text-sm" /> */} Vision
-              </button>
-              <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
-                {/* Feature <FaChevronRight className="text-sm" /> */} Feature
-              </button>
-
-              {/* Metadata Text - aligned horizontally with buttons */}
-              <div className="flex flex-col text-sm text-[#1e1e1e] font-medium ml-6">
-                <p>September 12, 2025</p>
-              </div>
-              <div className="flex flex-col text-sm text-[#1e1e1e] font-medium ml-6">
-                <p>8 min read</p>
+        <div className="relative w-[75vw] h-[37vw] rounded-2xl overflow-hidden shadow-xl">
+          <Image
+            src="/condrx_vision_blog_page.png"
+            alt="Blog background"
+            layout="fill"
+            objectFit="cover"
+            className="z-0"
+          />
+          <div className="absolute inset-0 z-10 p-6 flex flex-col justify-between text-white bg-black/40 rounded-2xl">
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4">
+                <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
+                  Vision
+                </button>
+                <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
+                  Feature
+                </button>
+                <div className="flex flex-col text-sm font-medium ml-6">
+                  <p>September 12, 2025</p>
+                </div>
+                <div className="flex flex-col text-sm font-medium ml-6">
+                  <p>8 min read</p>
+                </div>
               </div>
             </div>
-          </div>
-
-          {/* Bottom Section: Read Full Case button */}
-          <div>
-            <button className="font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
-              Read full case <FaChevronRight className="text-base" />
-            </button>
+            <div>
+              <button className="font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
+                Read full case <FaChevronRight className="text-base" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
-      
+      {/* Filter Buttons */}
+      <div className="flex font-inter justify-center mt-16 font-normal text-xl gap-4">
+        <button className="rounded-3xl border-2 px-5 py-2 border-[#C45816]">
+          All
+        </button>
+        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
+          Technology
+        </button>
+        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
+          Community
+        </button>
+        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
+          Product Updates
+        </button>
+        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
+          Company
+        </button>
+      </div>
+
+      {/* Blog Card Grid */}
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-6 mt-12 font-inter mb-20 max-w-[1200px]">
+          {data.map((post, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col w-[350px]"
+            >
+              {/* Image */}
+              <div className="relative w-full h-96">
+                <Image
+                  src={post.image}
+                  alt={post.name}
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+
+              {/* Card Content */}
+              <div className="flex flex-col px-5 pt-5 pb-6 text-left h-full">
+                {/* Section (Styled as a button) */}
+                <button className="rounded-3xl border-2 px-4 py-1.5 border-[#767676] bg-[#E9E9E9] text-sm font-medium self-start mb-2">
+                  {post.section}
+                </button>
+
+                {/* Date */}
+                <p className="text-sm text-gray-600 mb-1">{post.date}</p>
+
+                {/* Title */}
+                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-3">
+                  {post.name}
+                </h3>
+
+                {/* Description */}
+                <p className="text-sm text-[#333] mb-6 leading-snug">
+                  {post.description}
+                </p>
+
+                {/* Author */}
+                <p className="text-sm font-medium text-[#666] mt-auto">
+                  {post.author}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="flex flex-col items-center text-center font-inter space-y-3 mb-10">
+      {/* Top image */}
+      <Image 
+        alt="3d rotate"
+        src="/3d_rotate.png"
+        width={520}
+        height={590}
+        className="rotate-345"
+      />
+
+      {/* Heading */}
+      <h1 className="text-6xl font-medium font-inter">Stay in the loop.</h1>
+
+      {/* Paragraph */}
+      <p className="text-lg font-normal text-[#333] max-w-md">
+        Keep up with the latest updates and news from Condrx.
+      </p>
+
+      {/* Buttons */}
+      <div className="flex flex-col sm:flex-row gap-4 mt-4">
+        <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-6 py-3 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+          {/* <Image src="/condrx_boat.png" alt="Embed" width={24} height={28} /> */}
+          See our tools
+        </button>
+
+        <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+          {/* <Image src="/condrx_boat.png" alt="Embed" width={24} height={28} /> */}
+          Follow us
+        </button>
+      </div>
+    </div>
+
+      <Footer />
     </>
   );
 };

@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronDown } from "react-icons/fa";
 import { useRouter } from "next/navigation";
-import Navbar from "./components/navbar";
+import Navbar from "@/app/components/navbar";
+import Footer from "@/app/components/footer";
 
 const Demo = () => {
   return (

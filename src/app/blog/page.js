@@ -43,11 +43,11 @@ const Blog = () => {
           <div className="flex flex-col">
             <div className="flex items-center gap-4">
               {/* Buttons */}
-              <button className="text-base font-medium flex items-center gap-2 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-2.5 rounded-md hover:shadow-md transition-all duration-300 shadow">
-                Vision <FaChevronRight className="text-sm" />
+              <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
+                {/* Vision <FaChevronRight className="text-sm" /> */} Vision
               </button>
-              <button className="text-base font-medium flex items-center gap-2 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-2.5 rounded-md hover:shadow-md transition-all duration-300 shadow">
-                Feature <FaChevronRight className="text-sm" />
+              <button className="text-base font-medium flex items-center gap-2 bg-[#424143] text-white px-6 py-2.5 rounded-3xl hover:shadow-md transition-all duration-300 shadow">
+                {/* Feature <FaChevronRight className="text-sm" /> */} Feature
               </button>
 
               {/* Metadata Text - aligned horizontally with buttons */}
@@ -62,12 +62,14 @@ const Blog = () => {
 
           {/* Bottom Section: Read Full Case button */}
           <div>
-            <button className="font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
+            <button className="font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
               Read full case <FaChevronRight className="text-base" />
             </button>
           </div>
         </div>
       </div>
+
+      
     </>
   );
 };

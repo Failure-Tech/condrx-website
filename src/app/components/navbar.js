@@ -27,9 +27,9 @@ const Navbar = () => {
 
             {/* Center: Navigation Links */}
             <ul className="flex space-x-8 transition">
-                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Product</li>
-                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Vision</li>
-                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300">Pricing</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/product")}>Product</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/vision")}>Vision</li>
+                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/pricing")}>Pricing</li>
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/blog")}>Blog</li>
             </ul>
 

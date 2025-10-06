@@ -201,9 +201,9 @@ const Pricing = () => {
         <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col w-full md:w-1/3">
           <h1 className="text-lg">Starter</h1>
           <h2 className="text-4xl font-medium mt-2">Free</h2>
-          <button onClick={() => (<Link to="https://tally.so/r/wa7EEZ" target="_blank" rel="noopener noreferrer" />)} className="hover:cursor-pointer mt-4 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-xl">
+          <a href="https://tally.so/r/wa7EEZ" target="_blank" rel="noopener noreferrer" className="text-center hover:cursor-pointer mt-4 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-xl">
             Join the waitlist
-          </button>
+          </a>
           <p className="mt-4">Every core feature included.</p>
           <div className="border-b border-[#D9D9D9] mt-4"></div>
           <div className="flex flex-col gap-y-3 mt-4">
@@ -232,9 +232,9 @@ const Pricing = () => {
           <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
             $9 <span className="text-base font-normal text-xl">/ lifetime</span>
           </h2>
-          <button className="mt-4 bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded">
+          <a className="text-center text-lg mt-4 bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl">
             Subscribe
-          </button>
+          </a>
           <p className="mt-4">Every core feature included.</p>
           <div className="border-b border-[#D9D9D9] mt-4"></div>
           <h3 className="mt-4 font-medium">Everything in the starter, and...</h3>
@@ -260,9 +260,9 @@ const Pricing = () => {
           <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
             $20 <span className="text-base text-xl font-normal">/ lifetime</span>
           </h2>
-          <button className="mt-4 bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded">
+          <a className="mt-4 lext-lg text-center bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded-3xl">
             Level up
-          </button>
+          </a>
           <p className="mt-4">Every core feature included.</p>
           <div className="border-b border-[#D9D9D9] mt-4"></div>
           <h3 className="mt-4 font-medium">
@@ -287,6 +287,31 @@ const Pricing = () => {
           </div>
         </div>
       </div>
+        <div className="relative flex items-center justify-center bg-transparent mt-10 mb-20 mx-auto w-3/4 h-[500px] rounded-3xl">
+        {/* Background Image */}
+        <Image
+            src="/pricing_hs.png" // replace with your background image path
+            alt="Coming Soon Background"
+            fill
+            className="object-cover rounded-3xl"
+        />
+
+        {/* Overlay for darkening if needed */}
+        <div className="absolute inset-0 bg-black/40 rounded-xl"></div>
+
+        {/* Text Content */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 space-y-4">
+            <h1 className="text-2xl md:text-3xl font-medium">Coming soon</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold">
+            Free for students. Six months on us.
+            </h1>
+            <p className="text-lg md:text-xl font-normal max-w-2xl">
+            We’re building Condrx in high school — and we’re keeping it that way. <br />
+            Every verified high school student gets full access to Kairo Pro for 6 <br />
+            months, completely free.
+            </p>
+        </div>
+        </div>
       <Footer />
     </>
   );

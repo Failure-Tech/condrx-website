@@ -191,7 +191,7 @@ const Pricing = () => {
           </span>
         </h1>
         <p className="text-xl text-center font-normal">
-          Whether you're building for fun or for scale, Kairo keeps every line
+          Whether you&apos;re building for fun or for scale, Kairo keeps every line
           of <br /> code secure by default.
         </p>
       </div>
@@ -240,7 +240,7 @@ const Pricing = () => {
           <div>
             <h1 className="text-lg">Pro</h1>
             <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
-              $9 <span className="text-base font-normal text-xl">/ lifetime</span>
+              $9 <span className="font-normal text-xl">/ lifetime</span>
             </h2>
             <a className="block text-center text-lg mt-4 bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl">
               Subscribe
@@ -271,7 +271,7 @@ const Pricing = () => {
           <div>
             <h1 className="text-lg">Advanced</h1>
             <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
-              $20 <span className="text-base text-xl font-normal">/ lifetime</span>
+              $20 <span className="text-xl font-normal">/ lifetime</span>
             </h2>
             <a className="block text-center mt-4 text-lg bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded-3xl">
               Level up
@@ -561,7 +561,7 @@ const Pricing = () => {
               Free for students. Six months on us.
             </h1>
             <p className="text-lg md:text-xl font-normal max-w-2xl">
-              We're building Condrx in high school — and we're keeping it that way. <br />
+              We&apos;re building Condrx in high school — and we&apos;re keeping it that way. <br />
               Every verified high school student gets full access to Kairo Pro for 6 <br />
               months, completely free.
             </p>

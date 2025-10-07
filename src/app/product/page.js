@@ -76,7 +76,7 @@ const Product = () => {
       </div>
 
       {/* Promotional Video Placeholder */}
-      <div className="font-inter bg-[#D9D9D9] border-2 border-[#000000] mb-20 rounded-3xl mx-4 md:mx-20 lg:mx-40 p-6 min-h-[500px] flex flex-col md:flex-row justify-center items-center text-center">
+      <div className="font-inter bg-[#D9D9D9] border-2 border-[#000000] mb-50 rounded-3xl mx-4 md:mx-20 lg:mx-40 p-6 min-h-[500px] flex flex-col md:flex-row justify-center items-center text-center">
         <h1 className="text-6xl">
           Promotional video <br /> coming soon
         </h1>

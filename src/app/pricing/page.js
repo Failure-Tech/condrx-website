@@ -172,6 +172,21 @@ import Image from "next/image";
 import { IoCheckmark } from "react-icons/io5";
 import { HiOutlineXMark } from "react-icons/hi2";
 
+export const plans = [
+  {
+    link: "https://buy.stripe.com/test_8x214f3a2ghVdVzfD43F603",
+    priceId: "price_1SFjE31Hwiygz4x1ZnMAgJ4B",
+    price: 9,
+    duration: "/onetime"
+  },
+  {
+    link: "https://buy.stripe.com/test_eVq00bh0SghV3gVgH83F604",
+    priceId: "price_1SFjKA1Hwiygz4x1snwn6rfu",
+    price: 20,
+    duration: "/onetime"
+  }
+]
+
 const Pricing = () => {
   return (
     <>
@@ -244,7 +259,7 @@ const Pricing = () => {
               $9 <span className="font-normal text-xl">/ lifetime</span>
             </h2>
             <button className="mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white py-3 px-6 rounded-3xl text-center justify-center flex items-center gap-5 w-full hover:cursor-pointer">
-              <a>
+              <a href={plans[0].link} target="_blank" rel="noopener noreferrer">
                 Subscribe
               </a>
             </button>
@@ -277,7 +292,7 @@ const Pricing = () => {
               $20 <span className="text-xl font-normal">/ lifetime</span>
             </h2>
             <button className="mb-5 bg-gradient-to-r from-[#C45816] to-[#d66119] mt-5 text-white py-3 px-6 rounded-3xl text-center justify-center w-full flex items-center gap-2 hover:cursor-pointer">
-            <a>
+            <a href={plans[1].link} target="_blank" rel="noopener noreferrer">
               Level up
             </a>
             </button>
@@ -327,7 +342,7 @@ const Pricing = () => {
             <h1 className="text-2xl font-medium">Pro</h1>
             <p className="text-lg text-gray-700">$9 / lifetime</p>
             <button className="mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white mt-4 py-3 px-6 rounded-xl w-full flex items-center justify-center hover:cursor-pointer">
-              <a href="#">Subscribe</a>
+              <a href={plans[0].link} target="_blank" rel="noopener noreferrer">Subscribe</a>
             </button>
           </div>
 
@@ -336,7 +351,7 @@ const Pricing = () => {
             <h1 className="text-2xl font-medium">Advanced</h1>
             <p className="text-lg text-gray-700">$20 / lifetime</p>
             <button className="mb-5 bg-gradient-to-r from-[#C45816] to-[#E37633] text-white mt-4 py-3 px-6 rounded-xl w-full flex items-center justify-center hover:cursor-pointer">
-              <a href="#">Level up</a>
+              <a href={plans[1].link} target="_blank" rel="noopener noreferrer">Level up</a>
             </button>
           </div>
         </div>

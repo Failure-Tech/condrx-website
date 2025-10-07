@@ -53,7 +53,7 @@ const vibecode = () => {
           There was a time when being a great developer meant knowing exactly what to Google. You’d search a cryptic error message, open five Stack Overflow tabs, copy a solution, and pray it worked. That era is ending.
         </p>
         <p className="text-lg">
-          Today’s developers are moving into a new rhythm—what we call "vibe coding." It’s a workflow powered by intuition, AI suggestions, and seamless context-awareness. Instead of digging through forums, you build in flow. The tool reads your intent, predicts your path, and offers relevant blocks before you even ask.
+          Today’s developers are moving into a new rhythm—what we call &quot;vibe coding.&quot; It’s a workflow powered by intuition, AI suggestions, and seamless context-awareness. Instead of digging through forums, you build in flow. The tool reads your intent, predicts your path, and offers relevant blocks before you even ask.
         </p>
 
         <h1 className="text-2xl font-semibold">How Condrx Enables Flow</h1>
@@ -73,7 +73,7 @@ const vibecode = () => {
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            "PurpCode: Reasoning for Safer Code Generation"
+            &quot;PurpCode: Reasoning for Safer Code Generation&quot;
           </a>, which deeply explores how AI models can reason through security constraints and code purpose—not just syntax.
         </p>
         <p className="text-lg">
@@ -81,7 +81,7 @@ const vibecode = () => {
         </p>
 
         <p className="text-lg">
-          The result? Developers who ship faster, safer, and with far less stress. Because when the tools support your vibe, you don't need Stack Overflow to hold your hand—you just build.
+          The result? Developers who ship faster, safer, and with far less stress. Because when the tools support your vibe, you don&apos;t need Stack Overflow to hold your hand—you just build.
         </p>
       </div>
 

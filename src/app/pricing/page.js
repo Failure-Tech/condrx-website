@@ -168,7 +168,6 @@ import Footer from "@/app/components/footer";
 
 import React from "react";
 import Image from "next/image";
-import { Link } from "react-router-dom";
 
 import { IoCheckmark } from "react-icons/io5";
 import { HiOutlineXMark } from "react-icons/hi2";

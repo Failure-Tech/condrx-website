@@ -49,7 +49,7 @@ const Product = () => {
     <>
       <Navbar />
       <div className="font-inter flex flex-col justify-center items-center text-center space-y-3 my-15 mb-6 mx-4 md:mx-20 lg:mx-40">
-        <h1 className="text-6xl text-left font-medium w-full">
+        <h1 className="text-5xl text-left font-medium w-full">
           Building the{" "}
           <span className="text-transparent bg-gradient-to-r from-[#7E7E7E] to-[#181818] inline-block bg-clip-text">
             quiet infrastructure

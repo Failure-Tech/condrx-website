@@ -144,13 +144,13 @@ const Home = () => {
           </h1>
 
           <div className="relative flex items-center justify-center mt-3 mb-2">
-            <Image 
+            {/* <Image 
               alt="Arrow Icon"
               src="/11.svg"
               width={500}
               height={500}
               className="absolute -left-80 -top-4 rotate-180 opacity-40"
-            />
+            /> */}
 
             <p className="font-inter text-xl text-[#333333] max-w-2xl relative z-10 px-4 leading-relaxed">
               Condrx is a Gen-Z engineering team building AI, cyber, and finance
@@ -159,13 +159,13 @@ const Home = () => {
           </div>
 
           <div className="relative flex items-center justify-center space-x-6 mt-10 text-xl z-10">
-            <Image 
+            {/* <Image 
               alt="Key Icon"
               src="/10.svg"
               width={500}
               height={500}
               className="absolute -left-64 -top-24 -rotate-45 opacity-30"
-            />
+            /> */}
 
             <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
               Join the waitlist <FaChevronRight className="text-sm" />
@@ -174,13 +174,13 @@ const Home = () => {
               See our work <FaChevronRight className="text-sm" />
             </button>
 
-            <Image 
+            {/* <Image 
               alt="Money Icon"
               src="/9.svg"
               width={500}
               height={500}
               className="absolute -right-64 -top-28 rotate-12 opacity-30"
-            />
+            /> */}
           </div>
         </div>
       </div>

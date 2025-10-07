@@ -184,6 +184,7 @@ const Pricing = () => {
             width={71}
             height={80}
             alt="CondRx Labs Logo"
+            className="rotate-345 scale-100"
           />
           <span className="text-6xl font-semibold text-[#C45816]">
             for free.

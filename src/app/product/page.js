@@ -83,7 +83,7 @@ const Product = () => {
       </div>
 
       {/* Flagship Product Section */}
-      <div className="flex flex-col font-inter justify-between items-start text-left space-y-2 mx-4 md:mx-20 lg:mx-40 mt-16">
+      <div className="flex flex-col font-inter justify-between items-start text-left space-y-2 mx-4 md:mx-20 lg:mx-40 mt-50">
         <h1 className="text-[#C45816] text-lg">Flagship product</h1>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full">

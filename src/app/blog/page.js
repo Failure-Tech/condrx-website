@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/app/components/navbar";
 import Image from "next/image";
 import { FaChevronRight } from "react-icons/fa";
@@ -9,7 +9,8 @@ import { useRouter } from "next/navigation";
 
 const Blog = () => {
   const router = useRouter();
-  
+  const [filter, setFilter] = useState("All");
+
   const data = [
     {
       image: "/welcome_condrx.png",
@@ -73,6 +74,9 @@ const Blog = () => {
     },
   ];
 
+  const filteredData =
+    filter === "All" ? data : data.filter((post) => post.section === filter);
+
   return (
     <>
       <Navbar />
@@ -80,7 +84,6 @@ const Blog = () => {
       {/* Hero Section */}
       <div className="flex items-start justify-center px-6 pt-10 font-inter">
         <div className="flex items-center gap-10 mx-auto">
-          {/* Text Block */}
           <div className="flex flex-col space-y-4 text-left">
             <h1 className="font-semibold text-[7rem] leading-[6.5rem]">Blog</h1>
             <p className="text-xl leading-snug text-[#333]">
@@ -90,7 +93,6 @@ const Blog = () => {
             </p>
           </div>
 
-          {/* Logo Image */}
           <div>
             <Image
               alt="Ship logo"
@@ -102,9 +104,9 @@ const Blog = () => {
         </div>
       </div>
 
-      {/* Featured Blog Entry Box with Image Background */}
+      {/* Featured Blog */}
       <div className="flex justify-center mt-20 font-inter">
-        <div className="relative w-[75vw] h-[37vw] rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-[80vw] h-[37vw] rounded-2xl overflow-hidden shadow-xl">
           <Image
             src="/condrx_vision_blog_page.png"
             alt="Blog background"
@@ -139,34 +141,33 @@ const Blog = () => {
       </div>
 
       {/* Filter Buttons */}
-      <div className="flex font-inter justify-center mt-16 font-normal text-xl gap-4">
-        <button className="rounded-3xl border-2 px-5 py-2 border-[#C45816]">
-          All
-        </button>
-        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
-          Technology
-        </button>
-        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
-          Community
-        </button>
-        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
-          Product Updates
-        </button>
-        <button className="rounded-3xl border-2 px-5 py-2 border-[#767676]">
-          Company
-        </button>
+      <div className="flex font-inter justify-center mt-16 font-normal text-xl gap-4 flex-wrap">
+        {["All", "Technology", "Community", "Product Updates", "Company"].map(
+          (cat) => (
+            <button
+              key={cat}
+              onClick={() => setFilter(cat)}
+              className={`hover:cursor-pointer rounded-3xl border-2 px-6 py-2 transition-all duration-300 ${
+                filter === cat
+                  ? "border-[#C45816] bg-[#C45816] text-white"
+                  : "border-[#767676] text-[#333]"
+              }`}
+            >
+              {cat}
+            </button>
+          )
+        )}
       </div>
 
-      {/* Blog Card Grid */}
+      {/* Blog Grid */}
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 px-6 mt-12 font-inter mb-20 max-w-[1200px]">
-          {[...data].reverse().map((post, index) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 px-6 mt-12 font-inter mb-20 max-w-[1400px]">
+          {[...filteredData].reverse().map((post, index) => (
             <div
               key={index}
-              className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col w-[350px]"
+              className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col w-[400px]"
             >
-              {/* Image */}
-              <div className="relative w-full h-96">
+              <div className="relative w-full h-[400px]">
                 <Image
                   src={post.image}
                   alt={post.name}
@@ -175,71 +176,49 @@ const Blog = () => {
                 />
               </div>
 
-              {/* Card Content */}
               <div
-                className="flex hover:cursor-pointer flex-col px-5 pt-5 pb-6 text-left"
+                className="flex hover:cursor-pointer flex-col px-6 pt-6 pb-8 text-left space-y-2"
                 onClick={() => router.push(post.click)}
               >
-                {/* Section */}
                 <button className="rounded-3xl border-2 px-4 py-1.5 border-[#767676] bg-[#E9E9E9] text-sm font-medium self-start mb-2">
                   {post.section}
                 </button>
-
-                {/* Date */}
-                <p className="text-sm text-gray-600 mb-1">{post.date}</p>
-
-                {/* Title */}
-                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-3">
+                <p className="text-sm text-gray-600">{post.date}</p>
+                <h3 className="text-xl font-semibold text-[#1e1e1e] mb-2">
                   {post.name}
                 </h3>
-
-                {/* Description */}
-                <p className="text-sm text-[#333] mb-2 leading-snug">
+                <p className="text-sm text-[#333] leading-snug">
                   {post.description}
                 </p>
-
-                {/* Author (remove mt-auto, apply small top margin if needed) */}
-                <p className="text-sm font-bold text-[#666] mt-1">
-                  {post.author}
-                </p>
+                <p className="text-sm font-bold text-[#666]">{post.author}</p>
               </div>
-
             </div>
           ))}
         </div>
       </div>
 
+      {/* Subscribe Section */}
       <div className="flex flex-col items-center text-center font-inter space-y-3 mb-10">
-      {/* Top image */}
-      <Image 
-        alt="3d rotate"
-        src="/3d_rotate.png"
-        width={520}
-        height={590}
-        className="rotate-345"
-      />
-
-      {/* Heading */}
-      <h1 className="text-6xl font-medium font-inter">Stay in the loop.</h1>
-
-      {/* Paragraph */}
-      <p className="text-lg font-normal text-[#333] max-w-md">
-        Keep up with the latest updates and news from Condrx.
-      </p>
-
-      {/* Buttons */}
-      <div className="flex flex-col sm:flex-row gap-4 mt-4">
-        <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-6 py-3 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
-          {/* <Image src="/condrx_boat.png" alt="Embed" width={24} height={28} /> */}
-          See our tools
-        </button>
-
-        <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
-          {/* <Image src="/condrx_boat.png" alt="Embed" width={24} height={28} /> */}
-          Follow us
-        </button>
+        <Image
+          alt="3d rotate"
+          src="/3d_rotate.png"
+          width={520}
+          height={590}
+          className="rotate-345"
+        />
+        <h1 className="text-6xl font-medium font-inter">Stay in the loop.</h1>
+        <p className="text-lg font-normal text-[#333] max-w-md">
+          Keep up with the latest updates and news from Condrx.
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+            See our tools
+          </button>
+          <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+            Follow us
+          </button>
+        </div>
       </div>
-    </div>
 
       <Footer />
     </>

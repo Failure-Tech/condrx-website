@@ -50,7 +50,7 @@ const Start = () => {
             <div className="font-inter text-left text-sm text-gray-800 space-y-6 px-6 sm:px-20 md:px-32 lg:px-48 mb-16 leading-relaxed">
                 <h1 className="text-2xl font-semibold">Welcome to Condrx</h1>
                 <p className="text-lg">
-                    We're a small R&D firm with big ambitions—on a mission to build tools that solve the hardest problems in AI, security, and finance. We believe innovation doesn’t come from following trends. It comes from rethinking systems, asking deeper questions, and shipping with care.
+                    We&apos;re a small R&D firm with big ambitions—on a mission to build tools that solve the hardest problems in AI, security, and finance. We believe innovation doesn’t come from following trends. It comes from rethinking systems, asking deeper questions, and shipping with care.
                 </p>
                 <p className="text-lg">
                     Condrx was started by a group of builders who wanted to do things differently. We don’t just write code—we build systems, explore research, and chase ideas worth grinding for. The goal? To take the breakthroughs happening in papers, labs, and open-source—and turn them into real-world, user-first products.
@@ -73,7 +73,7 @@ const Start = () => {
                 </p>
 
                 <p className="text-lg">
-                    Whether you're a researcher, developer, startup, or just curious—thanks for being here. We’re excited for what’s ahead.
+                    Whether you&apos;re a researcher, developer, startup, or just curious—thanks for being here. We’re excited for what’s ahead.
                 </p>
             </div>
 

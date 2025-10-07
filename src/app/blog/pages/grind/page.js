@@ -50,7 +50,7 @@ const Grind = () => {
             <div className="font-inter text-left text-sm text-gray-800 space-y-6 px-6 sm:px-20 md:px-32 lg:px-48 mb-16 leading-relaxed">
                 <h1 className="text-2xl font-semibold">From Idea to Execution</h1>
                 <p className="text-lg">
-                    Condrx was born out of countless late nights spent questioning what to build and how to make it truly useful. The idea wasn't obvious at first—it came from a blend of frustration with repetitive research workflows and the excitement of what was possible using cutting-edge machine learning.
+                    Condrx was born out of countless late nights spent questioning what to build and how to make it truly useful. The idea wasn&apos;t obvious at first—it came from a blend of frustration with repetitive research workflows and the excitement of what was possible using cutting-edge machine learning.
                 </p>
                 <p className="text-lg">
                     Many nights were spent sketching interfaces in Figma, building mockups, and refining the product experience. The goal was always clear: build something genuinely helpful for people in research and development—something that saves time, enhances clarity, and unlocks insights.
@@ -73,7 +73,7 @@ const Grind = () => {
                         rel="noopener noreferrer"
                         className="text-blue-600 underline"
                     >
-                        "PurpCode: Reasoning for Safer Code Generation"
+                        &quot;PurpCode: Reasoning for Safer Code Generation&quot;
                     </a>
                     , we’ve implemented a high-grade paper-to-application pipeline that merges LLM capabilities with real-time tools for exploring and interacting with complex documents and data.
                 </p>

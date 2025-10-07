@@ -58,7 +58,7 @@ const ForsythFirst = () => {
 
                 <h1 className="text-2xl font-semibold">Why We Started It</h1>
                 <p className="text-lg">
-                    We saw a gap. Too many developers are expected to "just know" how to integrate AI tooling into their workflows. Security is often left for later, and most hackathons prioritize speed over sustainability or robustness.
+                    We saw a gap. Too many developers are expected to &quot;just know&quot; how to integrate AI tooling into their workflows. Security is often left for later, and most hackathons prioritize speed over sustainability or robustness.
                 </p>
                 <p className="text-lg">
                     Forsyth First flips that script. It gives developers early access to Kairo, technical guidance, and a protected environment to experiment with fast iteration and secure practices—without the pressure of “getting it perfect.”

@@ -53,7 +53,7 @@ const Kairo = () => {
           Before we built Kairo, we built something very different: a reinforcement learning simulation to test how agents could reason through ambiguous goals and reward structures. We wanted to understand not just if models could act—but if they could learn intent in uncertain environments.
         </p>
         <p className="text-lg">
-          The simulation worked. But we quickly hit a wall: agents could "succeed" by cutting corners, bypassing systems, or finding shortcuts that a human team would never accept in a real-world product. That’s when we started thinking seriously about trust, security, and goal alignment in code generation.
+          The simulation worked. But we quickly hit a wall: agents could &quot;succeed&quot; by cutting corners, bypassing systems, or finding shortcuts that a human team would never accept in a real-world product. That’s when we started thinking seriously about trust, security, and goal alignment in code generation.
         </p>
 
         <h1 className="text-2xl font-semibold">Then Came SOC 2</h1>
@@ -66,10 +66,10 @@ const Kairo = () => {
 
         <h1 className="text-2xl font-semibold">The Shift to Proactive Security</h1>
         <p className="text-lg">
-          We didn’t want to just audit code. We wanted to build a system that could guide developers in real time—helping them write secure code by default, not by checklist. Something that could reason through what you're building, not just how.
+          We didn’t want to just audit code. We wanted to build a system that could guide developers in real time—helping them write secure code by default, not by checklist. Something that could reason through what you&apos;re building, not just how.
         </p>
         <p className="text-lg">
-          We named it Kairo—a nod to time, intent, and precision. It's not another security scanner. It's an intelligent layer that understands purpose and flags misalignments before they ship.
+          We named it Kairo—a nod to time, intent, and precision. It&apos;s not another security scanner. It&apos;s an intelligent layer that understands purpose and flags misalignments before they ship.
         </p>
 
         <h1 className="text-2xl font-semibold">Grounded in Research</h1>
@@ -81,14 +81,14 @@ const Kairo = () => {
             rel="noopener noreferrer"
             className="text-blue-600 underline"
           >
-            "PurpCode: Reasoning for Safer Code Generation"
+            &quot;PurpCode: Reasoning for Safer Code Generation&quot;
           </a>. The paper pushed beyond syntax to explore how models can reason through purpose and safety constraints—exactly what our early experiments had struggled with.
         </p>
         <p className="text-lg">
           We turned those ideas into a real-world product. A model that doesn’t just autocomplete, but collaborates. One that understands the context of your codebase, the structure of your API, and the kind of security posture your team needs.
         </p>
 
-        <h1 className="text-2xl font-semibold">Where We're Headed</h1>
+        <h1 className="text-2xl font-semibold">Where We&apos;re Headed</h1>
         <p className="text-lg">
           Kairo is still evolving. We’re rolling it out selectively, testing it with real teams in real-world security environments. But the vision is clear: to help developers build secure-by-default systems without breaking flow.
         </p>

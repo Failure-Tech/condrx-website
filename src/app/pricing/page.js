@@ -196,20 +196,21 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="font-inter flex flex-col md:flex-row items-stretch justify-center gap-8 mt-10 mb-20 px-6 md:px-20">
+      <div className="font-inter flex flex-col md:flex-row items-stretch justify-center gap-10 mt-10 mb-20 px-6 md:px-20">
         {/* Starter Card */}
         <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[400px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>
             <h1 className="text-lg">Starter</h1>
-            <h2 className="text-4xl font-medium mt-2">Free</h2>
-            <a
-              href="https://tally.so/r/wa7EEZ"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block text-center mt-4 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-xl"
-            >
-              Join the waitlist
-            </a>
+            <h2 className="text-4xl font-medium mt-2 mb-5">Free</h2>
+            <button className="w-full mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white py-3 px-6 rounded-3xl text-center justify-center flex items-center gap-2 hover:cursor-pointer">
+              <a
+                href="https://tally.so/r/wa7EEZ"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join the waitlist
+              </a>
+            </button>
             <p className="mt-4">Every core feature included.</p>
             <div className="border-b border-[#D9D9D9] mt-4"></div>
             <div className="flex flex-col gap-y-3 mt-4">
@@ -238,12 +239,14 @@ const Pricing = () => {
         <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>
             <h1 className="text-lg">Pro</h1>
-            <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
+            <h2 className="text-4xl font-medium mt-2 mb-5 flex items-end gap-1">
               $9 <span className="font-normal text-xl">/ lifetime</span>
             </h2>
-            <a className="block text-center text-lg mt-4 bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl">
-              Subscribe
-            </a>
+            <button className="mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white py-3 px-6 rounded-3xl text-center justify-center flex items-center gap-5 w-full hover:cursor-pointer">
+              <a>
+                Subscribe
+              </a>
+            </button>
             <p className="mt-4">Every core feature included.</p>
             <div className="border-b border-[#D9D9D9] mt-4"></div>
             <h3 className="mt-4 font-medium">Everything in the starter, and...</h3>
@@ -269,12 +272,14 @@ const Pricing = () => {
         <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>
             <h1 className="text-lg">Advanced</h1>
-            <h2 className="text-4xl font-medium mt-2 flex items-end gap-1">
+            <h2 className="text-4xl font-medium mt-2 mb-5 flex items-end gap-1">
               $20 <span className="text-xl font-normal">/ lifetime</span>
             </h2>
-            <a className="block text-center mt-4 text-lg bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded-3xl">
+            <button className="mb-5 bg-gradient-to-r from-[#C45816] to-[#d66119] mt-5 text-white py-3 px-6 rounded-3xl text-center justify-center w-full flex items-center gap-2 hover:cursor-pointer">
+            <a>
               Level up
             </a>
+            </button>
             <p className="mt-4">Every core feature included.</p>
             <div className="border-b border-[#D9D9D9] mt-4"></div>
             <h3 className="mt-4 font-medium">
@@ -300,248 +305,103 @@ const Pricing = () => {
           <div className="mt-auto mb-2"></div>
         </div>
       </div>
-
-      {/* <div>
-        <div>
-          <h1>Starter</h1>
-          <p>Free</p>
-          <a
-            href="https://tally.so/r/wa7EEZ"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block text-center mt-4 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-xl"
-          >
-            Join the waitlist
-          </a>
-        </div>
-        <div>
-          <h1>Pro</h1>
-          <p>$9 / lifetime</p>
-          <a className="block text-center text-lg mt-4 bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl">
-            Subscribe
-          </a>
-        </div>
-        <div>
-          <h1>Advanced</h1>
-          <p>$20 / lifetime</p>
-          <a className="block text-center mt-4 text-lg bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded-3xl">
-            Level up
-          </a>
-        </div>
-        <div>
-          <h1>Build Better</h1>
-          <div className="border-b border-[#D9D9D9] mt-4"></div>
-          <div>
-            <h1>Real-time Guardrails</h1>
-            <IoCheckmark />
-            <IoCheckmark />
-            <IoCheckmark />
-          </div>
-          <div className="border-b border-[#D9D9D9] mt-4"></div>
-          <div>
-            <h1>AI Rewrite Engine</h1>
-            <IoCheckmark />
-            <IoCheckmark />
-            <p><IoCheckmark />Enhanced</p>
-          </div>
-          <div className="border-b border-[#D9D9D9] mt-4"></div>
-          <div>
-            <h1>Execution Sandbox</h1>
-            <HiOutlineXMark />
-            <p><IoCheckmark /> Local</p>
-            <p><IoCheckmark /> Cloud-based</p>
-          </div>
-          <div className="border-b border-[#D9D9D9] mt-4"></div>
-          <div>
-            <h1>Performance Metrics</h1>
-            <HiOutlineXMark />
-            <IoCheckmark />
-            <p><IoCheckmark />Advanced</p>
-          </div>
-        </div>
-      </div> */}
-
       <div className="w-full flex flex-col font-inter px-6 md:px-20 mt-10 mb-20">
         {/* Header Row: Plans */}
-        <div className="flex justify-between items-start w-full mb-8">
-          <div className="flex-1"></div>
-          <div className="flex justify-between text-left w-3/4">
-            {/* Starter */}
-            <div className="flex flex-col items-start text-left w-[180px]">
-              <h1 className="text-xl font-medium">Starter</h1>
-              <p className="text-lg text-gray-700">Free</p>
-              <a
-                href="https://tally.so/r/wa7EEZ"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block mt-3 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl w-full text-center"
-              >
+        <div className="grid grid-cols-[1.2fr_repeat(3,1fr)] gap-x-12 w-full mb-12 items-start">
+          <div></div>
+
+          {/* Starter */}
+          <div className="flex flex-col items-start text-left">
+            <h1 className="text-2xl font-medium">Starter</h1>
+            <p className="text-lg text-gray-700">Free</p>
+            <button className="mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white mt-4 py-3 px-6 rounded-xl w-full flex items-center justify-center hover:cursor-pointer">
+              <a href="https://tally.so/r/wa7EEZ" target="_blank" rel="noopener noreferrer">
                 Join the waitlist
               </a>
-            </div>
+            </button>
+          </div>
 
-            {/* Pro */}
-            <div className="flex flex-col items-start text-left w-[180px]">
-              <h1 className="text-xl font-medium">Pro</h1>
-              <p className="text-lg text-gray-700">$9 / lifetime</p>
-              <a
-                href="#"
-                className="block mt-3 text-lg bg-gradient-to-r from-[#D9D9D9] to-[#000000] text-white py-2 px-4 rounded-3xl w-full text-center"
-              >
-                Subscribe
-              </a>
-            </div>
+          {/* Pro */}
+          <div className="flex flex-col items-start text-left">
+            <h1 className="text-2xl font-medium">Pro</h1>
+            <p className="text-lg text-gray-700">$9 / lifetime</p>
+            <button className="mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white mt-4 py-3 px-6 rounded-xl w-full flex items-center justify-center hover:cursor-pointer">
+              <a href="#">Subscribe</a>
+            </button>
+          </div>
 
-            {/* Advanced */}
-            <div className="flex flex-col items-start text-left w-[180px]">
-              <h1 className="text-xl font-medium">Advanced</h1>
-              <p className="text-lg text-gray-700">$20 / lifetime</p>
-              <a
-                href="#"
-                className="block mt-3 text-lg bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-2 px-4 rounded-3xl w-full text-center"
-              >
-                Level up
-              </a>
-            </div>
+          {/* Advanced */}
+          <div className="flex flex-col items-start text-left">
+            <h1 className="text-2xl font-medium">Advanced</h1>
+            <p className="text-lg text-gray-700">$20 / lifetime</p>
+            <button className="mb-5 bg-gradient-to-r from-[#C45816] to-[#E37633] text-white mt-4 py-3 px-6 rounded-xl w-full flex items-center justify-center hover:cursor-pointer">
+              <a href="#">Level up</a>
+            </button>
           </div>
         </div>
 
-        {/* Section 1: Build Better */}
-        <div className="flex flex-col w-full gap-8">
-          <h1 className="text-2xl font-medium text-left font-inter">Build Better</h1>
-
-          <div className="flex justify-between items-start w-full">
-            <div className="flex-1 text-left">
-              <h2 className="text-lg font-semibold">Real-time Guardrails</h2>
-            </div>
-            <div className="flex justify-between w-3/4">
-              <IoCheckmark className="text-black text-xl" />
-              <IoCheckmark className="text-black text-xl" />
-              <IoCheckmark className="text-black text-xl" />
-            </div>
-          </div>
-
-          <div className="border-b border-[#D9D9D9] w-full"></div>
-
-          <div className="flex justify-between items-start w-full">
-            <div className="flex-1 text-left">
-              <h2 className="text-lg font-semibold">AI Rewrite Engine</h2>
-            </div>
-            <div className="flex justify-between w-3/4">
-              <IoCheckmark className="text-black text-xl" />
-              <IoCheckmark className="text-black text-xl" />
-              <p className="flex items-center gap-1 text-black text-xl">
-                <IoCheckmark className="text-black text-xl" /> Enhanced
-              </p>
-            </div>
-          </div>
-
-          <div className="border-b border-[#D9D9D9] w-full"></div>
-
-          <div className="flex justify-between items-start w-full">
-            <div className="flex-1 text-left">
-              <h2 className="text-lg font-semibold">Execution Sandbox</h2>
-            </div>
-            <div className="flex justify-between w-3/4">
-              <HiOutlineXMark className="text-black text-xl" />
-              <p className="flex items-center gap-1 text-black text-xl">
-                <IoCheckmark className="text-black text-xl" /> Local
-              </p>
-              <p className="flex items-center gap-1 text-black text-xl">
-                <IoCheckmark className="text-black text-xl" /> Cloud-based
-              </p>
-            </div>
-          </div>
-
-          <div className="border-b border-[#D9D9D9] w-full"></div>
-
-          <div className="flex justify-between items-start w-full">
-            <div className="flex-1 text-left">
-              <h2 className="text-lg font-semibold">Performance Metrics</h2>
-            </div>
-            <div className="flex justify-between w-3/4">
-              <HiOutlineXMark className="text-black text-xl" />
-              <IoCheckmark className="text-black text-xl" />
-              <p className="flex items-center gap-1 text-black text-xl">
-                <IoCheckmark className="text-black text-xl" /> Advanced
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Section 2: Your Coding Flow */}
-        <div className="flex flex-col w-full gap-8 mt-20">
-        <h1 className="text-2xl font-medium text-left font-inter">Your Coding Flow</h1>
-
-        {[ 
-            ["Kairo Access", ["Core", "Kairo+", "Kairo-X"]],
-            ["Prompt Customization", ["X", "Basic", "Persistent Memory"]],
-            ["Daily Usage Limit", ["25/day", "100/day", "Unlimited"]],
-            ["Project History", ["X", "X", "Checkmark"]],
-            ["API Key Access", ["X", "Checkmark", "Extended"]],
-        ].map(([title, items], idx) => (
-            <React.Fragment key={idx}>
-            <div className="flex justify-between items-start w-full">
-                <div className="flex-1 text-left">
-                <h2 className="text-lg font-semibold">{title}</h2>
-                </div>
-                <div className="flex justify-between w-3/4">
-                {items.map((item, i) =>
-                    item === "X" ? (
-                    <HiOutlineXMark key={i} className="text-black text-xl" />
-                    ) : item === "Checkmark" ? (
-                    <IoCheckmark key={i} className="text-black text-xl" />
-                    ) : (
-                    <p key={i} className="flex items-center gap-1 text-black text-xl">
-                        {item.includes("Checkmark") && <IoCheckmark className="text-black text-xl" />}
-                        {item.replace("Checkmark ", "")}
-                    </p>
-                    )
-                )}
-                </div>
-            </div>
-            {/* Divider */}
-            <div className="border-b border-[#D9D9D9] w-full"></div>
-            </React.Fragment>
-        ))}
-        </div>
-
-        {/* Section 3: Community and Growth */}
-        <div className="flex flex-col w-full gap-8 mt-20">
-        <h1 className="text-2xl font-medium text-left font-inter">Community and Growth</h1>
-
+        {/* Feature Sections */}
         {[
-            ["Community Hub", ["Checkmark", "Priority", "Multi-device Access"]],
-            ["Response Priority", ["X", "X", "Fast-Track"]],
-            ["Early Features", ["X", "Checkmark", "Early Beta Access"]],
-            ["Onboarding", ["Self-Serve", "Guided", "Custom Setup"]],
-        ].map(([title, items], idx) => (
-            <React.Fragment key={idx}>
-            <div className="flex justify-between items-start w-full">
-                <div className="flex-1 text-left">
-                <h2 className="text-lg font-semibold">{title}</h2>
-                </div>
-                <div className="flex justify-between w-3/4">
-                {items.map((item, i) =>
-                    item === "X" ? (
-                    <HiOutlineXMark key={i} className="text-black text-xl" />
-                    ) : item === "Checkmark" ? (
-                    <IoCheckmark key={i} className="text-black text-xl" />
-                    ) : (
-                    <p key={i} className="flex items-center gap-1 text-black text-xl">
-                        <IoCheckmark className="text-black text-xl" /> {item}
-                    </p>
-                    )
-                )}
-                </div>
-            </div>
-            {/* Divider */}
-            <div className="border-b border-[#D9D9D9] w-full"></div>
-            </React.Fragment>
-        ))}
-        </div>
+          {
+            title: "Build Better",
+            rows: [
+              ["Real-time Guardrails", ["Check", "Check", "Check"]],
+              ["AI Rewrite Engine", ["Check", "Check", "Enhanced"]],
+              ["Execution Sandbox", ["X", "Local", "Cloud-based"]],
+              ["Performance Metrics", ["X", "Check", "Advanced"]],
+            ],
+          },
+          {
+            title: "Your Coding Flow",
+            rows: [
+              ["Kairo Access", ["Core", "Kairo+", "Kairo-X"]],
+              ["Prompt Customization", ["X", "Basic", "Persistent Memory"]],
+              ["Daily Usage Limit", ["25/day", "100/day", "Unlimited"]],
+              ["Project History", ["X", "X", "Check"]],
+              ["API Key Access", ["X", "Check", "Extended"]],
+            ],
+          },
+          {
+            title: "Community and Growth",
+            rows: [
+              ["Community Hub", ["Check", "Priority", "Multi-device Access"]],
+              ["Response Priority", ["X", "X", "Fast-Track"]],
+              ["Early Features", ["X", "Check", "Early Beta Access"]],
+              ["Onboarding", ["Self-Serve", "Guided", "Custom Setup"]],
+            ],
+          },
+        ].map((section, sIdx) => (
+          <div key={sIdx} className={`flex flex-col w-full gap-8 ${sIdx > 0 ? "mt-20" : ""}`}>
+            <h1 className="text-2xl font-medium text-left">{section.title}</h1>
 
-        <div className="relative flex items-center justify-center bg-transparent mt-10 mb-20 mx-auto w-3/4 h-[500px] rounded-3xl">
+            {section.rows.map(([feature, plans], idx) => (
+              <React.Fragment key={idx}>
+                <div className="grid grid-cols-[1.2fr_repeat(3,1fr)] gap-x-12 items-start">
+                  <div className="text-left">
+                    <h2 className="text-lg font-semibold">{feature}</h2>
+                  </div>
+
+                  {plans.map((val, i) => (
+                    <div key={i} className="flex items-center text-black text-xl">
+                      {val === "X" ? (
+                        <HiOutlineXMark className="text-black text-xl" />
+                      ) : val === "Check" ? (
+                        <IoCheckmark className="text-black text-xl" />
+                      ) : (
+                        <p className="flex items-center gap-1">
+                          <IoCheckmark className="text-black text-xl" /> {val}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+                <div className="border-b border-[#D9D9D9] w-full"></div>
+              </React.Fragment>
+            ))}
+          </div>
+        ))}
+      </div>
+        <div className="relative flex items-center justify-center bg-transparent mt-35 mb-20 mx-auto w-3/4 h-[500px] rounded-3xl">
           {/* Background Image */}
           <Image
             src="/pricing_hs.png" // replace with your background image path
@@ -566,7 +426,6 @@ const Pricing = () => {
             </p>
           </div>
         </div>
-      </div>
       <Footer />
     </>
   );

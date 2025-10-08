@@ -28,13 +28,13 @@ const Navbar = () => {
             {/* Center: Navigation Links */}
             <ul className="flex space-x-8 transition">
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/product")}>Product</li>
-                <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/vision")}>Vision</li>
+                {/* <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/vision")}>Vision</li> */}
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/pricing")}>Pricing</li>
                 <li className="font-inter cursor-pointer hover:text-[#E37633] hover:duration-300" onClick={() => router.push("/blog")}>Blog</li>
             </ul>
 
             {/* Right: Get Started Button */}
-            <button className="font-inter text-white bg-[#1E1E1E] rounded-full px-6 py-2">
+            <button onClick={() => router.push("/product")} className="font-inter cursor-pointer text-white bg-[#1E1E1E] rounded-full px-6 py-2">
                 Get Started
             </button>
         </nav>

@@ -45,6 +45,10 @@ const Product = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const handleWaitlist = () => {
+    window.open("https://tally.so/r/wa7EEZ", "_blank");
+  };
+
   return (
     <>
       <Navbar />
@@ -207,7 +211,7 @@ const Product = () => {
           alt="Kairo logo"
           className="mx-auto mt-[-150]"
         />
-        <button className="mt-[-150] mb-15 bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-4 px-10 rounded-lg text-lg flex items-center gap-2">
+        <button onClick={handleWaitlist} className="cursor-pointer mt-[-150] mb-15 bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-4 px-10 rounded-lg text-lg flex items-center gap-2">
           Join the waitlist <FaChevronRight />
         </button>
       </div>
@@ -324,7 +328,7 @@ const Product = () => {
           right.
         </p>
         <div className="flex gap-4 mt-4 items-center justify-center">
-          <button className="bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-3 px-6 rounded-lg flex items-center gap-2 hover:cursor-pointer">
+          <button onClick={handleWaitlist} className="bg-gradient-to-r from-[#C45816] to-[#E37633] text-white py-3 px-6 rounded-lg flex items-center gap-2 hover:cursor-pointer">
             Join the waitlist <FaChevronRight />
           </button>
           <button

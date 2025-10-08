@@ -15,6 +15,10 @@ const Demo = () => {
   )
 }
 
+const handleNavigate = () => {
+    window.open("https://tally.so/r/wa7EEZ", "_blank");
+}
+
 const Home = () => {
   const [expanded1, setExpanded1] = useState(false);
   const [expanded2, setExpanded2] = useState(false);
@@ -167,10 +171,10 @@ const Home = () => {
               className="absolute -left-64 -top-24 -rotate-45 opacity-30"
             /> */}
 
-            <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+            <button onClick={handleNavigate} className="font-inter font-medium flex items-center cursor-pointer gap-2 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
               Join the waitlist <FaChevronRight className="text-sm" />
             </button>
-            <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-3.5 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+            <button onClick={() => router.push("/blog")} className="font-inter font-medium flex items-center cursor-pointer gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-3.5 rounded-lg hover:bg-[#4a4b54] hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
               See our work <FaChevronRight className="text-sm" />
             </button>
 
@@ -253,7 +257,7 @@ const Home = () => {
           Every line of code.
         </h1>
 
-        <button className="flex font-inter font-medium items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
+        <button onClick={handleNavigate} className="cursor-pointer flex font-inter font-medium items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
           Join the waitlist <FaChevronRight className="text-sm" />
         </button>
       </div>
@@ -419,7 +423,7 @@ const Home = () => {
             <h1 className="text-4xl leading-tight">
               Leveling the playing field <br /> for students, startups, and <br /> small teams.
             </h1>
-            <button className="flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-base font-medium shadow-xl">
+            <button onClick={() => router.push("/product")} className="cursor-pointer flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-8 py-3.5 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 text-base font-medium shadow-xl">
               See our vision <FaChevronRight className="text-sm" />
             </button>
           </div>

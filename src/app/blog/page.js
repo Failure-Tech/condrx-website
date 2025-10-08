@@ -77,6 +77,10 @@ const Blog = () => {
   const filteredData =
     filter === "All" ? data : data.filter((post) => post.section === filter);
 
+  const handleSocials = () => {
+    window.open("https://x.com/condrxeng", "_blank");
+  }
+
   return (
     <>
       <Navbar />
@@ -124,7 +128,7 @@ const Blog = () => {
                   Feature
                 </button>
                 <div className="flex flex-col text-sm font-medium ml-6">
-                  <p>September 12, 2025</p>
+                  <p>September 9, 2025</p>
                 </div>
                 <div className="flex flex-col text-sm font-medium ml-6">
                   <p>8 min read</p>
@@ -132,7 +136,7 @@ const Blog = () => {
               </div>
             </div>
             <div>
-              <button className="font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
+              <button onClick={() => router.push("/blog/pages/kairo")} className="cursor-pointer font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-8 py-4 text-lg rounded-2xl hover:shadow-2xl hover:scale-105 transition-all duration-300 shadow-xl">
                 Read full case <FaChevronRight className="text-base" />
               </button>
             </div>
@@ -211,10 +215,10 @@ const Blog = () => {
           Keep up with the latest updates and news from Condrx.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
-          <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+          <button onClick={() => navigate("/product")} className="cursor-pointer font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#C45816] to-[#d66119] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
             See our tools
           </button>
-          <button className="font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
+          <button onClick={handleSocials} className="cursor-pointer font-inter font-medium flex items-center gap-3 bg-gradient-to-r from-[#373941] to-[#232428] text-white px-6 py-3 rounded-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 z-10 shadow-xl">
             Follow us
           </button>
         </div>

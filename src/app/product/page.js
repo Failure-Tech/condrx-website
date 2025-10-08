@@ -48,7 +48,7 @@ const Product = () => {
   return (
     <>
       <Navbar />
-      <div className="font-inter flex flex-col justify-center items-center text-center space-y-3 my-15 mb-6 mx-4 md:mx-20 lg:mx-40">
+      <div className="font-inter flex flex-col justify-center items-center text-center space-y-3 my-15 mb-30 mx-4 md:mx-20 lg:mx-40">
         <h1 className="text-5xl text-left font-medium w-full">
           Building the{" "}
           <span className="text-transparent bg-gradient-to-r from-[#7E7E7E] to-[#181818] inline-block bg-clip-text">
@@ -76,7 +76,7 @@ const Product = () => {
       </div>
 
       {/* Promotional Video Placeholder */}
-      <div className="font-inter bg-[#D9D9D9] border-2 border-[#000000] mb-50 rounded-3xl mx-4 md:mx-20 lg:mx-40 p-6 min-h-[500px] flex flex-col md:flex-row justify-center items-center text-center">
+      <div className="font-inter bg-[#D9D9D9] border-2 border-[#000000] mb-45 rounded-3xl mx-4 md:mx-20 lg:mx-40 p-6 min-h-[750px] flex flex-col md:flex-row justify-center items-center text-center">
         <h1 className="text-6xl">
           Promotional video <br /> coming soon
         </h1>

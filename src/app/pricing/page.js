@@ -49,7 +49,7 @@ const Pricing = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="font-inter flex flex-col md:flex-row items-stretch justify-center gap-10 mt-10 mb-20 px-6 md:px-20">
+      <div className="font-inter flex flex-col md:flex-row items-stretch justify-center gap-10 mt-10 mb-45 px-6 md:px-20">
         {/* Starter Card */}
         <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[400px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>

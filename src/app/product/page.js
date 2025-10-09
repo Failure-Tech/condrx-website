@@ -226,8 +226,7 @@ const Product = () => {
 <div className="font-inter flex flex-col justify-between items-start text-left space-y-2 mx-4 md:mx-20 lg:mx-40 mt-16 mb-10">
   <p className="text-[#C45816]">Next-gen compliance for small teams</p>
   <h1 className="text-4xl font-medium">Automate and stay compliant without overhead.</h1>
-  <div className="border-b border-[#D9D9D9] mt-4 mb-4"></div>
-
+  <div className="border-b w-full border-[#D9D9D9] mt-4 mb-4"></div>
   {/* Compliance Section */}
   <div className="flex flex-col md:flex-row justify-between w-full">
     {/* Left side heading */}
@@ -289,7 +288,7 @@ const Product = () => {
     </div>
   </div>
 
-  <div className="border-b border-[#D9D9D9] mt-8"></div>
+  <div className="border-b border-[#D9D9D9] mt-8 mb-8 w-full"></div>
 
   {/* Technical Foundations Section */}
   <div className="flex flex-col md:flex-row justify-between w-full mt-6">

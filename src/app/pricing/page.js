@@ -55,7 +55,7 @@ const Pricing = () => {
           <div>
             <h1 className="text-lg">Starter</h1>
             <h2 className="text-4xl font-medium mt-2 mb-5">Free</h2>
-            <button className="w-full mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white py-3 px-6 rounded-3xl text-center justify-center flex items-center gap-2 hover:cursor-pointer">
+            <button className="w-full mb-5 bg-gradient-to-r from-[#43444E] to-[#232428] text-white py-3 px-6 rounded-xl text-center justify-center flex items-center gap-2 hover:cursor-pointer">
               <a
                 href="https://tally.so/r/wa7EEZ"
                 target="_blank"
@@ -89,7 +89,7 @@ const Pricing = () => {
         </div>
 
         {/* Pro Card */}
-        <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
+        <div className="border-2 border-[#E37633] rounded-xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>
             <h1 className="text-lg">Pro</h1>
             <h2 className="text-4xl font-medium mt-2 mb-5 flex items-end gap-1">
@@ -122,7 +122,7 @@ const Pricing = () => {
         </div>
 
         {/* Advanced Card */}
-        <div className="border-2 border-[#E37633] rounded-3xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
+        <div className="border-2 border-[#E37633] rounded-xl p-6 flex flex-col justify-between w-full md:w-[280px] lg:w-[450px] h-full min-h-[600px] bg-white shadow-sm">
           <div>
             <h1 className="text-lg">Advanced</h1>
             <h2 className="text-4xl font-medium mt-2 mb-5 flex items-end gap-1">
@@ -231,7 +231,7 @@ const Pricing = () => {
               <React.Fragment key={idx}>
                 <div className="grid grid-cols-[1.2fr_repeat(3,1fr)] gap-x-12 items-start">
                   <div className="text-left">
-                    <h2 className="text-lg font-semibold">{feature}</h2>
+                    <h2 className="text-xl font-semibold">{feature}</h2>
                   </div>
 
                   {plans.map((val, i) => (
@@ -269,7 +269,7 @@ const Pricing = () => {
           {/* Text Content */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 space-y-4">
             <h1 className="text-2xl md:text-3xl font-medium">Coming soon</h1>
-            <h1 className="text-5xl md:text-6xl font-semibold">
+            <h1 className="text-5xl md:text-6xl font-medium">
               Free for students. Six months on us.
             </h1>
             <p className="text-lg md:text-xl font-normal max-w-2xl">
